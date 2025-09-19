@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "妖怪物語",
+    "subtitle": "Tales of Japanese Yokai",
+    "description": "Journey into the mysterious world of Japanese supernatural beings, where ancient folklore meets modern storytelling",
+    "primaryButton": "Explore Stories",
+    "secondaryButton": "Learn About Yokai"
+  },
+  "sections": {
+    "featuredStories": {
+      "title": "Featured Yokai Stories",
+      "subtitle": "Discover the most captivating tales from Japanese folklore, where demons, spirits, and supernatural beings come to life"
+    },
+    "categories": {
+      "title": "Yokai Categories",
+      "subtitle": "Explore different types of supernatural beings from Japanese mythology"
+    }
+  },
+  "navigation": {
+    "brand": "妖怪物語",
+    "links": [
+      { "name": "Home", "href": "#" },
+      { "name": "Stories", "href": "#" },
+      { "name": "Categories", "href": "#categories" },
+      { "name": "About", "href": "#" }
+    ]
+  },
+  "footer": {
+    "description": "Exploring the rich tapestry of Japanese supernatural folklore through modern storytelling.",
+    "categories": [
+      { "name": "Demons", "href": "#" },
+      { "name": "Spirits", "href": "#" },
+      { "name": "Water Creatures", "href": "#" },
+      { "name": "Mountain Beings", "href": "#" }
+    ],
+    "links": [
+      { "name": "About", "href": "#" },
+      { "name": "Contact", "href": "#" },
+      { "name": "RSS Feed", "href": "#" }
+    ],
+    "copyright": "© 2024 妖怪物語. All rights reserved."
+  }
+}
