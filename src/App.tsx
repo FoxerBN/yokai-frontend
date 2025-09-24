@@ -1,18 +1,23 @@
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import HeroSection from './sections/HeroSection';
-import FeaturedSection from './sections/FeaturedSection';
-import CategoriesSection from './sections/CategoriesSection';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LearnAboutYokai from './pages/LearnAboutYokai';
+
+
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
-      <Navbar />
-      <HeroSection />
-      <FeaturedSection />
-      <CategoriesSection />
-      <Footer />
-    </div>
+    <Router>
+          <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/learn" element={<LearnAboutYokai />} />
+            </Routes>
+            <Footer />
+          </div>
+        </Router>
   );
 }
 

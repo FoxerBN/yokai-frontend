@@ -1,43 +1,43 @@
 {
   "hero": {
     "title": "妖怪物語",
-    "subtitle": "Tales of Japanese Yokai",
+    "subtitle": "Príbehy japonských Yōkai",
     "description": "Vydajte sa na cestu do tajomného sveta japonských nadprirodzených bytostí, kde sa staroveký folklór stretáva s moderným rozprávaním príbehov.",
-    "primaryButton": "Explore Stories",
-    "secondaryButton": "Learn About Yokai"
+    "primaryButton": "Preskúmať Príbehy",
+    "secondaryButton": "Dozvedieť sa o Yōkai"
   },
   "sections": {
     "featuredStories": {
-      "title": "Featured Yokai Stories",
-      "subtitle": "Discover the most captivating tales from Japanese folklore, where demons, spirits, and supernatural beings come to life"
+      "title": "Odporúčané Príbehy Yōkai",
+      "subtitle": "Objavte najúchvatnejšie príbehy z japonského folklóru, kde démoni, duchovia a nadprirodzené bytosti ožívajú"
     },
     "categories": {
-      "title": "Yokai Categories",
-      "subtitle": "Explore different types of supernatural beings from Japanese mythology"
+      "title": "Kategórie Yōkai",
+      "subtitle": "Preskúmajte rôzne typy nadprirodzených bytostí z japonskej mytológie"
     }
   },
   "navigation": {
     "brand": "妖怪物語",
     "links": [
-      { "name": "Home", "href": "#" },
-      { "name": "Stories", "href": "#stories" },
-      { "name": "Categories", "href": "#categories" },
-      { "name": "About", "href": "#" }
+      { "name": "Domov", "href": "/" },
+      { "name": "Príbehy", "href": "#stories" },
+      { "name": "Kategórie", "href": "#categories" },
+      { "name": "O projekte", "href": "#" }
     ]
   },
   "footer": {
-    "description": "Exploring the rich tapestry of Japanese supernatural folklore through modern storytelling.",
+    "description": "Preskúmanie bohatej tapisérie japonského nadprirodzeného folklóru prostredníctvom moderného rozprávania príbehov.",
     "categories": [
-      { "name": "Demons", "href": "#" },
-      { "name": "Spirits", "href": "#" },
-      { "name": "Water Creatures", "href": "#" },
-      { "name": "Mountain Beings", "href": "#" }
+      { "name": "Démoni", "href": "#" },
+      { "name": "Duchovia", "href": "#" },
+      { "name": "Vodné Stvorenia", "href": "#" },
+      { "name": "Horské Bytosti", "href": "#" }
     ],
     "links": [
-      { "name": "About", "href": "#" },
-      { "name": "Contact", "href": "#" },
-      { "name": "RSS Feed", "href": "#" }
+      { "name": "O projekte", "href": "#" },
+      { "name": "Kontakt", "href": "#" },
+      { "name": "RSS kanál", "href": "#" }
     ],
-    "copyright": "© 2024 妖怪物語. All rights reserved."
+    "copyright": "© 2024 妖怪物語. Všetky práva vyhradené."
   }
 }

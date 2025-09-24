@@ -1,7 +1,7 @@
 import React from 'react';
-import CategoryCard from '../components/ui/CategoryCard';
-import yokaiData from '../data/yokai.json';
-import content from '../data/content.json';
+import CategoryCard from '../../components/ui/CategoryCard';
+import yokaiData from '../../data/yokai.json';
+import content from '../../data/content.json';
 
 const CategoriesSection: React.FC = () => {
   return (

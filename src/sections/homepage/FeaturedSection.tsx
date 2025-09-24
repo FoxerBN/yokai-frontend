@@ -1,7 +1,7 @@
 import React from 'react';
-import StoryCard from '../components/ui/StoryCard';
-import yokaiData from '../data/yokai.json';
-import content from '../data/content.json';
+import StoryCard from '../../components/ui/StoryCard';
+import yokaiData from '../../data/yokai.json';
+import content from '../../data/content.json';
 
 const FeaturedSection: React.FC = () => {
   const getCategoryName = (categoryId: string): string => {
