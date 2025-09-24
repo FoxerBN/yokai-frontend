@@ -2,7 +2,7 @@
   "hero": {
     "title": "妖怪物語",
     "subtitle": "Tales of Japanese Yokai",
-    "description": "Journey into the mysterious world of Japanese supernatural beings, where ancient folklore meets modern storytelling",
+    "description": "Vydajte sa na cestu do tajomného sveta japonských nadprirodzených bytostí, kde sa staroveký folklór stretáva s moderným rozprávaním príbehov.",
     "primaryButton": "Explore Stories",
     "secondaryButton": "Learn About Yokai"
   },
@@ -20,7 +20,7 @@
     "brand": "妖怪物語",
     "links": [
       { "name": "Home", "href": "#" },
-      { "name": "Stories", "href": "#" },
+      { "name": "Stories", "href": "#stories" },
       { "name": "Categories", "href": "#categories" },
       { "name": "About", "href": "#" }
     ]

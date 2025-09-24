@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import { Scroll, Eye } from 'lucide-react';
-import FloatingParticle from '../components/ui/FloatingParticle';
-import content from '../data/content.json';
+import React, { useEffect, useState } from "react";
+import { Scroll, Eye } from "lucide-react";
+import FloatingParticle from "../components/ui/FloatingParticle";
+import content from "../data/content.json";
 
 const HeroSection: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Floating Particles */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none z-10">
         {Array.from({ length: 20 }).map((_, i) => (
           <FloatingParticle key={i} delay={i * 0.3} />
         ))}
       </div>
 
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-red-950 to-gray-900 opacity-80" />
-      
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-red-950 to-gray-900 opacity-80" />
+
       {/* Hero Content */}
-      <div 
-        className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
+      <div
+        className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
         style={{ transform: `translateY(${scrollY * 0.5}px)` }}
       >
         <div className="slide-in-up">

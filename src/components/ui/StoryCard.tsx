@@ -1,18 +1,6 @@
 import React from 'react';
 import { Moon, Zap } from 'lucide-react';
-
-interface StoryCardProps {
-  story: {
-    id: number;
-    title: string;
-    description: string;
-    category: string;
-    readTime: string;
-    image: string;
-  };
-  index: number;
-  getCategoryName: (categoryId: string) => string;
-}
+import type { StoryCardProps } from '../../interfaces/StoryCardProps';
 
 const StoryCard: React.FC<StoryCardProps> = ({ story, index, getCategoryName }) => (
   <div
