@@ -5,6 +5,5 @@ export interface CategoryCardProps {
     englishName: string;
     description: string;
     color: string;
-  };
-  index: number;
+  }
 }

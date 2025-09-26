@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "68cee7d8fa71700cc7747e81",
+    "title": "Bakeneko: Mačka ktorá sa zmenila",
+    "slug": "bakeneko-macka-ktora-sa-zmenila",
+    "content": "Bakeneko je legendárna mačka obake, ktorá získala nadprirodzené schopnosti. Tieto mystické bytosti sú súčasťou japonského folklóru a predstavujú mačky, ktoré sa transformovali do nadprirodzenej formy. Podľa legendy sa mačka môže stať bakeneko, ak dosiahne určitý vek alebo zažije traumatickú udalosť. Bakeneko má schopnosti ako je chôdza po zadných nohách, rozprávanie ľudskými hlasmi, ovládanie mŕtvych tiel a manipulácia s ohňom. V niektorých príbehoch sa tieto mačky správajú ako neškodné spoločníci, zatiaľ čo v iných sa stávajú nebezpečnými predátormi, ktorí sa živia ľudskou energiou alebo krvou.",
+    "excerpt": "Bakeneko je legendárna mačka obake, ktorá získala nadprirodzené schopnosti a stala sa súčasťou japonského folklóru.",
+    "author": "Admin",
+    "category": "yokai-animals",
+    "publishedAt": "2024-01-15T00:00:00.000+00:00",
+    "views": 150,
+    "likes": 12,
+    "createdAt": "2025-09-20T17:43:52.100+00:00",
+    "updatedAt": "2025-09-20T17:43:52.100+00:00",
+    "readingTime": 3,
+    "imageUrl": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=800",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bakeneko",
+      "https://yokai.com/bakeneko/",
+      "https://www.ancient-origins.net/myths-legends/bakeneko-009879"
+    ]
+  },
+  {
+    "_id": "68cee7d8fa71700cc7747e82",
+    "title": "Kitsune: Deväťchvostá líška",
+    "slug": "kitsune-devatchvosta-liska",
+    "content": "Kitsune sú inteligentné líšky z japonskej mytológie, ktoré majú schopnosť meniť svoju podobu. Čím staršia je kitsune, tým viac chvostov má - až do maximálneho počtu deviatich. Tieto mystické bytosti môžu byť dobré alebo zlé, v závislosti od ich charakteru a zámerov. Dobré kitsune, známe ako zenko, slúžia bohyni Inari a pomáhajú ľuďom. Zlé kitsune, yako, klamú a manipulujú ľudí pre vlastné potešenie. Kitsune majú rôzne magické schopnosti vrátane ilúzií, telepatických komunikácie, ovládania ohňa a schopnosti žiť tisíce rokov. V japonskej kultúre sú často zobrazované ako múdre a lstivé bytosti s hlbokou spirituálnou mocou.",
+    "excerpt": "Kitsune sú mystické líšky z japonskej mytológie so schopnosťou zmeny podoby a až deviatimi chvostami.",
+    "author": "Admin",
+    "category": "kitsune",
+    "publishedAt": "2024-01-20T00:00:00.000+00:00",
+    "views": 203,
+    "likes": 18,
+    "createdAt": "2025-09-21T10:15:30.100+00:00",
+    "updatedAt": "2025-09-21T10:15:30.100+00:00",
+    "readingTime": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kitsune",
+      "https://yokai.com/kitsune/",
+      "https://www.japanese-wiki-corpus.org/Shinto/Kitsune.html"
+    ]
+  },
+  {
+    "_id": "68cee7d8fa71700cc7747e83",
+    "title": "Tengu: Horskí bojovníci",
+    "slug": "tengu-horski-bojovnici",
+    "content": "Tengu sú legendárni horskí démoni a bojovníci z japonskej mytológie. Tradične sa zobrazujú s dlhými nosmi alebo zobákmi a krídlami. Sú známi ako majstri bojových umení a často sa im pripisuje schopnosť učiť samurajov pokročilé techniky boja. Existujú dva hlavné typy tengu: Karasu-tengu, ktorí majú zobáky ako havrani, a Yamabushi-tengu s dlhými nosmi. Títo mocní démoni žijú v horách a lesoch, kde sa venujú meditácii a zdokonaľovaniu svojich bojových schopností. V niektorých príbehoch sú tengu zobrazovaní ako zlomyseľní trikátori, zatiaľ čo v iných sú múdri učitelia a ochranári prírody.",
+    "excerpt": "Tengu sú horskí démoni a majstri bojových umení z japonskej mytológie, známi svojimi dlhými nosmi.",
+    "author": "Admin",
+    "category": "tengu",
+    "publishedAt": "2024-01-25T00:00:00.000+00:00",
+    "views": 89,
+    "likes": 7,
+    "createdAt": "2025-09-22T14:22:15.100+00:00",
+    "updatedAt": "2025-09-22T14:22:15.100+00:00",
+    "readingTime": 3,
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tengu",
+      "https://yokai.com/tengu/",
+      "https://www.britannica.com/topic/tengu"
+    ]
+  }
+]
