@@ -19,7 +19,7 @@
   "navigation": {
     "brand": "妖怪物語",
     "links": [
-      { "name": "Domov", "href": "/" },
+      { "name": "Domov", "href": "#home" },
       { "name": "Príbehy", "href": "#stories" },
       { "name": "Kategórie", "href": "#categories" },
       { "name": "O projekte", "href": "#" }

@@ -1,11 +1,15 @@
 import React from 'react';
 import StoryCard from '../../components/ui/StoryCard';
+import { FeaturedStory, Category } from '../../types';
 import yokaiData from '../../data/yokai.json';
 import content from '../../data/content.json';
 
 const FeaturedSection: React.FC = () => {
+  const stories: FeaturedStory[] = yokaiData.featuredStories;
+  const categories: Category[] = yokaiData.categories;
+
   const getCategoryName = (categoryId: string): string => {
-    const category = yokaiData.categories.find(cat => cat.id === categoryId);
+    const category = categories.find(cat => cat.id === categoryId);
     return category ? category.englishName : 'Unknown';
   };
 
@@ -21,7 +25,7 @@ const FeaturedSection: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {yokaiData.featuredStories.map((story, index) => (
+        {stories.map((story, index) => (
           <StoryCard
             key={story.id}
             story={story}

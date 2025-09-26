@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
-import type { FloatingParticleProps } from "../../interfaces/FloatingParticlesProps";
+
+interface FloatingParticleProps {
+  delay: number;
+}
+
 const FloatingParticle: React.FC<FloatingParticleProps> = ({ delay }) => {
   const leftRef = useRef<string>(`${Math.random() * 100}%`);
   const topRef = useRef<string>(`${Math.random() * 100}%`);

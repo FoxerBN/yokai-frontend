@@ -1,5 +1,10 @@
 import React from "react";
-import type { CategoryCardProps } from "../../interfaces/CategoryCardProps";
+import { Category } from "../../types";
+
+interface CategoryCardProps {
+  category: Category;
+  index: number;
+}
 
 const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
   return (
@@ -20,8 +25,8 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
             {category.name}
           </h3>
           <p className="text-sm text-white mb-3">
-          {category.englishName}
-        </p>
+            {category.englishName}
+          </p>
           <p className="text-sm text-white">
             {category.description}
           </p>

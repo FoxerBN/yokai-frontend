@@ -1,9 +1,12 @@
 import React from 'react';
 import CategoryCard from '../../components/ui/CategoryCard';
+import { Category } from '../../types';
 import yokaiData from '../../data/yokai.json';
 import content from '../../data/content.json';
 
 const CategoriesSection: React.FC = () => {
+  const categories: Category[] = yokaiData.categories;
+  
   return (
     <section id="categories" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-16">
@@ -16,7 +19,7 @@ const CategoriesSection: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {yokaiData.categories.map((category, index) => (
+        {categories.map((category, index) => (
           <CategoryCard
             key={category.id}
             category={category}

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Scroll, Eye } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import FloatingParticle from "../../components/ui/FloatingParticle";
 import content from "../../data/content.json";
-import { useNavigate } from "react-router-dom";
+
 const HeroSection: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
   const navigate = useNavigate();
@@ -13,8 +14,13 @@ const HeroSection: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToStories = () => {
+    const element = document.querySelector('#stories');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Floating Particles */}
       <div className="absolute inset-0 pointer-events-none z-10">
         {Array.from({ length: 20 }).map((_, i) => (
@@ -41,14 +47,17 @@ const HeroSection: React.FC = () => {
             {content.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#stories">
-            <button className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-lg hover:from-red-700 hover:to-red-800 transition-all duration-200 transform hover:scale-105 flex items-center gap-2">
-               
+            <button 
+              onClick={scrollToStories}
+              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-lg hover:from-red-700 hover:to-red-800 transition-all duration-200 transform hover:scale-105 flex items-center gap-2"
+            >
               <Scroll className="h-5 w-5" />
               {content.hero.primaryButton}
             </button>
-            </a>
-            <button onClick={()=> navigate("/learn")} className="border border-gray-600 text-gray-300 px-8 py-3 rounded-lg hover:border-red-500 hover:text-red-400 transition-all duration-200 transform hover:scale-105 flex items-center gap-2">
+            <button 
+              onClick={() => navigate("/learn")} 
+              className="border border-gray-600 text-gray-300 px-8 py-3 rounded-lg hover:border-red-500 hover:text-red-400 transition-all duration-200 transform hover:scale-105 flex items-center gap-2"
+            >
               <Eye className="h-5 w-5" />
               {content.hero.secondaryButton}
             </button>
