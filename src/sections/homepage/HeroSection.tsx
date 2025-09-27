@@ -16,7 +16,9 @@ const HeroSection: React.FC = () => {
 
   const scrollToStories = () => {
     const element = document.querySelector('#stories');
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (

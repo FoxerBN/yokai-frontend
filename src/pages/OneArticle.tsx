@@ -162,7 +162,7 @@ const OneArticle: React.FC = () => {
             <button
               onClick={handleLikeToggle}
               disabled={isLiking}
-              className={`flex items-center gap-2 px-4 py-2 mt-2 rounded-lg transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 mt-2 ml-2 rounded-lg transition-all ${
                 isLiked 
                   ? 'bg-red-600 text-white hover:bg-red-700' 
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'

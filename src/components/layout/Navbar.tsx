@@ -1,17 +1,29 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import content from '../../data/content.json';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAdmin, setIsAdmin] = useState(true);
   const navigate = useNavigate();
+  const location = useLocation();
   
   const handleNavigation = (href: string) => {
     if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      element?.scrollIntoView({ behavior: 'smooth' });
+      // Ak nie sme na homepage, najprv sa presmeruj na homepage
+      if (location.pathname !== '/') {
+        navigate('/');
+        // Počkaj kým sa stránka načíta a potom scrolluj
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      } else {
+        // Ak sme už na homepage, scrolluj priamo
+        const element = document.querySelector(href);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }
     } else {
       navigate(href);
     }
