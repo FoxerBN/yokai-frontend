@@ -1,5 +1,6 @@
 // src/types/index.ts
 
+
 export interface Article {
   _id: string;
   title: string;
@@ -7,7 +8,12 @@ export interface Article {
   content: string;
   excerpt: string;
   author: string;
-  category: string;
+  category: {
+    _id: string;
+    name: string;
+    slug: string;
+    description: string;
+  };
   publishedAt: string;
   views: number;
   likes: number;
@@ -16,6 +22,7 @@ export interface Article {
   readingTime: number;
   imageUrl: string;
   sources: string[];
+  __v?: number;
 }
 
 export interface ArticleFormData {
@@ -38,12 +45,14 @@ export interface Category {
   description: string;
   color: string;
 }
+export type PopularArticle = Article;
 
 export interface FeaturedStory {
-  id: number;
+  id: string;
   title: string;
   description: string;
   category: string;
   readTime: string;
   image: string;
+  slug?: string;
 }

@@ -1,7 +1,4 @@
-// src/components/layout/Footer.tsx
-
 import React from 'react';
-import { Ghost } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import content from '../../data/content.json';
 
@@ -24,7 +21,12 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Ghost className="h-8 w-8 text-red-500" />
+              <img 
+              onClick={() => navigate('/')} 
+              src="/logo.png" 
+              alt="Logo" 
+              className="h-10 w-10 cursor-pointer" 
+            />
               <span className="text-xl font-bold bg-gradient-to-r from-red-500 to-amber-400 bg-clip-text text-transparent">
                 {content.navigation.brand}
               </span>
@@ -32,22 +34,6 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-4">
               {content.footer.description}
             </p>
-          </div>
-          
-          <div>
-            <h3 className="text-white font-semibold mb-4">Categories</h3>
-            <ul className="space-y-2 text-gray-400">
-              {content.footer.categories.map((category) => (
-                <li key={category.name}>
-                  <button
-                    onClick={() => handleNavigation(category.href)}
-                    className="hover:text-red-400 transition-colors duration-200"
-                  >
-                    {category.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
           </div>
           
           <div>
