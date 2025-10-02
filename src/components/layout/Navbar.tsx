@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import content from '../../data/content.json';
+import { logoutAdmin } from '../../adminApi';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  
+  useEffect(() => {
+    const adminStatus = localStorage.getItem('isAdmin') === 'true';
+    setIsAdmin(adminStatus);
+  }, []);
   
   const handleNavigation = (href: string) => {
     if (href.startsWith('#')) {
@@ -29,6 +35,20 @@ const Navbar: React.FC = () => {
     }
     setIsMenuOpen(false);
   };
+
+  const handleLogout = async () => {
+    try {
+      await logoutAdmin();
+      localStorage.removeItem('isAdmin');
+      setIsAdmin(false);
+      navigate('/');
+    } catch (error) {
+      console.error('Logout error:', error);
+      localStorage.removeItem('isAdmin');
+      setIsAdmin(false);
+      navigate('/');
+    }
+  };
   
   return (
     <nav className="fixed top-0 w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
@@ -44,12 +64,14 @@ const Navbar: React.FC = () => {
             <span className="text-xl font-bold bg-gradient-to-r from-red-500 to-amber-400 bg-clip-text text-transparent">
               {content.navigation.brand}
             </span>
-            <button 
-              onClick={() => setIsAdmin(!isAdmin)} 
-              className="text-gray-300 hover:text-red-400 transition-colors duration-200"
-            >
-              {isAdmin ? 'Admin' : 'Login'}
-            </button>
+            {isAdmin && (
+              <button 
+                onClick={handleLogout} 
+                className="text-gray-300 hover:text-red-400 transition-colors duration-200 text-sm"
+              >
+                Logout
+              </button>
+            )}
           </div>
           
           {/* Desktop Navigation */}
