@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Floating Particles */}
       <div className="absolute inset-0 pointer-events-none z-10">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {Array.from({ length: 50 }).map((_, i) => (
           <FloatingParticle key={i} delay={i * 0.3} />
         ))}
       </div>
@@ -68,10 +68,24 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gradient-to-b from-red-400 to-transparent rounded-full mt-2"></div>
-        </div>
+      <div
+        className="absolute bottom-20 left-1/2"
+        style={{
+          transform: `translateX(-50%) rotate(-15deg) translateY(${Math.min(scrollY, 100) * 0.5}px)`,
+          opacity: 1 - Math.min(scrollY, 400) / 400,
+          transition: "opacity 0.2s, transform 0.2s",
+          animation: "slow-bounce 2.5s infinite"
+        }}
+      >
+        <img className="brightness-85" src="katana.png" alt="" />
+        <style>
+          {`
+        @keyframes slow-bounce {
+          0%, 100% { transform: translateX(-50%) rotate(-15deg) translateY(0); }
+          50% { transform: translateX(-50%) rotate(-15deg) translateY(-18px); }
+        }
+          `}
+        </style>
       </div>
     </section>
   );
